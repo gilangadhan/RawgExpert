@@ -17,7 +17,7 @@ final class DependencyInjection: NSObject {
     let repository = GetGamesRepository(localeDataSource: locale, remoteDataSource: remote, mapper: mapper)
     return Interactor(repository: repository) as! U
   }
-  
+
   func provideSearch<U: UseCase>() -> U where U.Request == String, U.Response == [GameDomainModel] {
     let locale = GetSearchLocaleDataSource(realm: realm!)
     let remote = GetSearchRemoteDataSource(endpoint: Endpoints.Gets.search.url)
@@ -25,7 +25,7 @@ final class DependencyInjection: NSObject {
     let repository = SearchRepository(localeDataSource: locale, remoteDataSource: remote, mapper: mapper)
     return Interactor(repository: repository) as! U
   }
-  
+
   func provideDetail<U: UseCase>(detail: GameDomainModel) -> U where U.Request == Int, U.Response == GameDomainModel {
     let locale = GetDetailLocaleDataSource(realm: realm!)
     let remote = GetDetailRemoteDataSource(endpoint: Endpoints.Gets.gameById(detail.id).url)
@@ -33,14 +33,14 @@ final class DependencyInjection: NSObject {
     let repository = GetDetailRepository(localeDataSource: locale, remoteDataSource: remote, mapper: mapper)
     return Interactor(repository: repository) as! U
   }
-  
+
   func provideFavorite<U: UseCase>() -> U where U.Request == Int, U.Response == [GameDomainModel] {
     let locale = GetFavoriteLocaleDataSource(realm: realm!)
     let mapper = FavoriteListTransformer()
     let repository = GetFavoriteRepository(localeDataSource: locale, mapper: mapper)
     return Interactor(repository: repository) as! U
   }
-  
+
   func provideUpdateFavorite<U: UseCase>() -> U where U.Request == Int, U.Response == GameDomainModel {
     let locale = GetFavoriteLocaleDataSource(realm: realm!)
     let mapper = FavoriteTransformer()
