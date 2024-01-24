@@ -184,7 +184,7 @@
 		377704F82B4BAE7F00AF6D3D /* RawgExpert */ = {
 			isa = PBXGroup;
 			children = (
-				37D3A4992B5ED084002A1DD7 /* Module */,
+				37D3A4992B5ED084002A1DD7 /* UI */,
 				377704F92B4BAE7F00AF6D3D /* RawgExpertApp.swift */,
 				377704FB2B4BAE7F00AF6D3D /* ContentView.swift */,
 				3777050C2B4BD9EC00AF6D3D /* Info.plist */,
@@ -265,7 +265,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		37D3A4992B5ED084002A1DD7 /* Module */ = {
+		37D3A4992B5ED084002A1DD7 /* UI */ = {
 			isa = PBXGroup;
 			children = (
 				37D3A49A2B5ED0C3002A1DD7 /* Home */,
@@ -273,7 +273,7 @@
 				37D3A49C2B5ED0EB002A1DD7 /* Favorite */,
 				37D3A49D2B5ED0F6002A1DD7 /* Profile */,
 			);
-			path = Module;
+			path = UI;
 			sourceTree = "<group>";
 		};
 		37D3A49A2B5ED0C3002A1DD7 /* Home */ = {
