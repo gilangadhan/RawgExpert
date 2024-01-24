@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -370,10 +370,6 @@
 				377705092B4BB03F00AF6D3D /* XCRemoteSwiftPackageReference "Alamofire" */,
 				3765646B2B51277300236EDD /* XCRemoteSwiftPackageReference "realm-swift" */,
 				3765646E2B512A3500236EDD /* XCRemoteSwiftPackageReference "realm-core" */,
-				37DDCE442B5B6ACF00044B26 /* XCLocalSwiftPackageReference "../Module/Core" */,
-				37DDCE472B5BEF3900044B26 /* XCLocalSwiftPackageReference "../Module/Games" */,
-				37D3A4962B5EBA2C002A1DD7 /* XCLocalSwiftPackageReference "../Module/Detail" */,
-				37D3A49E2B5ED37E002A1DD7 /* XCLocalSwiftPackageReference "../Module/Favorite" */,
 			);
 			productRefGroup = 377704F72B4BAE7F00AF6D3D /* Products */;
 			projectDirPath = "";
@@ -715,25 +711,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCLocalSwiftPackageReference section */
-		37D3A4962B5EBA2C002A1DD7 /* XCLocalSwiftPackageReference "../Module/Detail" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../Module/Detail;
-		};
-		37D3A49E2B5ED37E002A1DD7 /* XCLocalSwiftPackageReference "../Module/Favorite" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../Module/Favorite;
-		};
-		37DDCE442B5B6ACF00044B26 /* XCLocalSwiftPackageReference "../Module/Core" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../Module/Core;
-		};
-		37DDCE472B5BEF3900044B26 /* XCLocalSwiftPackageReference "../Module/Games" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../Module/Games;
-		};
-/* End XCLocalSwiftPackageReference section */
 
 /* Begin XCRemoteSwiftPackageReference section */
 		3765646B2B51277300236EDD /* XCRemoteSwiftPackageReference "realm-swift" */ = {
