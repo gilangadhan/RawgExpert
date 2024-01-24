@@ -34,12 +34,6 @@
 		377705532B50456600AF6D3D /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377705522B50456600AF6D3D /* HomeRouter.swift */; };
 		37C33BC42B60242A00F2EBEF /* codemagic.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 37C33BC32B60242A00F2EBEF /* codemagic.yaml */; };
 		37C33BC82B6026CD00F2EBEF /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 37C33BC72B6026CD00F2EBEF /* .swiftlint.yml */; };
-		37C33BCA2B60298000F2EBEF /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = 37C33BC92B60298000F2EBEF /* Core */; };
-		37C33BD22B6032A600F2EBEF /* Module in Resources */ = {isa = PBXBuildFile; fileRef = 37C33BD12B6032A600F2EBEF /* Module */; };
-		37D3A4982B5EBA2C002A1DD7 /* Detail in Frameworks */ = {isa = PBXBuildFile; productRef = 37D3A4972B5EBA2C002A1DD7 /* Detail */; };
-		37D3A4A02B5ED37E002A1DD7 /* Favorite in Frameworks */ = {isa = PBXBuildFile; productRef = 37D3A49F2B5ED37E002A1DD7 /* Favorite */; };
-		37DDCE462B5B6ACF00044B26 /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = 37DDCE452B5B6ACF00044B26 /* Core */; };
-		37DDCE492B5BEF3900044B26 /* Games in Frameworks */ = {isa = PBXBuildFile; productRef = 37DDCE482B5BEF3900044B26 /* Games */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,9 +68,10 @@
 		377705272B4EF2F000AF6D3D /* RawgExpertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RawgExpertTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3777054F2B50307B00AF6D3D /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		377705522B50456600AF6D3D /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		37BF5A422B60E82C0046D4D4 /* Core */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Core; path = /Users/faridfirdautama/Development/Swift/Module/Core; sourceTree = "<absolute>"; };
+		37BF5A442B60E8440046D4D4 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Package.swift; path = ../Module/Core/Package.swift; sourceTree = "<group>"; };
 		37C33BC32B60242A00F2EBEF /* codemagic.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = codemagic.yaml; sourceTree = "<group>"; };
 		37C33BC72B6026CD00F2EBEF /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
-		37C33BD12B6032A600F2EBEF /* Module */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Module; path = ../Module; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,11 +84,6 @@
 				3765647A2B512C2D00236EDD /* RealmSwift in Frameworks */,
 				376564702B512A3500236EDD /* RealmCapi in Frameworks */,
 				376564742B512A3500236EDD /* RealmFFI in Frameworks */,
-				37C33BCA2B60298000F2EBEF /* Core in Frameworks */,
-				37D3A4A02B5ED37E002A1DD7 /* Favorite in Frameworks */,
-				37D3A4982B5EBA2C002A1DD7 /* Detail in Frameworks */,
-				37DDCE462B5B6ACF00044B26 /* Core in Frameworks */,
-				37DDCE492B5BEF3900044B26 /* Games in Frameworks */,
 				376564722B512A3500236EDD /* RealmCore in Frameworks */,
 				376564762B512A3500236EDD /* RealmQueryParser in Frameworks */,
 			);
@@ -163,7 +153,6 @@
 		377704ED2B4BAE7F00AF6D3D = {
 			isa = PBXGroup;
 			children = (
-				37C33BD12B6032A600F2EBEF /* Module */,
 				37C33BC72B6026CD00F2EBEF /* .swiftlint.yml */,
 				37C33BC32B60242A00F2EBEF /* codemagic.yaml */,
 				377704F82B4BAE7F00AF6D3D /* RawgExpert */,
@@ -250,6 +239,8 @@
 		37D3A4952B5D00F7002A1DD7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				37BF5A442B60E8440046D4D4 /* Package.swift */,
+				37BF5A422B60E82C0046D4D4 /* Core */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -324,11 +315,6 @@
 				376564752B512A3500236EDD /* RealmQueryParser */,
 				376564772B512C2D00236EDD /* Realm */,
 				376564792B512C2D00236EDD /* RealmSwift */,
-				37DDCE452B5B6ACF00044B26 /* Core */,
-				37DDCE482B5BEF3900044B26 /* Games */,
-				37D3A4972B5EBA2C002A1DD7 /* Detail */,
-				37D3A49F2B5ED37E002A1DD7 /* Favorite */,
-				37C33BC92B60298000F2EBEF /* Core */,
 			);
 			productName = RawgExpert;
 			productReference = 377704F62B4BAE7F00AF6D3D /* RawgExpert.app */;
@@ -404,7 +390,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37C33BD22B6032A600F2EBEF /* Module in Resources */,
 				37C33BC82B6026CD00F2EBEF /* .swiftlint.yml in Resources */,
 				37C33BC42B60242A00F2EBEF /* codemagic.yaml in Resources */,
 				377705012B4BAE8100AF6D3D /* Preview Assets.xcassets in Resources */,
@@ -812,26 +797,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 377705092B4BB03F00AF6D3D /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
-		};
-		37C33BC92B60298000F2EBEF /* Core */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Core;
-		};
-		37D3A4972B5EBA2C002A1DD7 /* Detail */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Detail;
-		};
-		37D3A49F2B5ED37E002A1DD7 /* Favorite */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Favorite;
-		};
-		37DDCE452B5B6ACF00044B26 /* Core */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Core;
-		};
-		37DDCE482B5BEF3900044B26 /* Games */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Games;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
