@@ -72,6 +72,10 @@
 		377705272B4EF2F000AF6D3D /* RawgExpertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RawgExpertTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3777054F2B50307B00AF6D3D /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		377705522B50456600AF6D3D /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		37BF5A5F2B60F5270046D4D4 /* Detail */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Detail; path = ../../Module/Detail; sourceTree = "<group>"; };
+		37BF5A602B60F5270046D4D4 /* Core */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Core; path = ../../Module/Core; sourceTree = "<group>"; };
+		37BF5A612B60F5270046D4D4 /* Games */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Games; path = ../../Module/Games; sourceTree = "<group>"; };
+		37BF5A622B60F5270046D4D4 /* Favorite */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Favorite; path = ../../Module/Favorite; sourceTree = "<group>"; };
 		37C33BC32B60242A00F2EBEF /* codemagic.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = codemagic.yaml; sourceTree = "<group>"; };
 		37C33BC72B6026CD00F2EBEF /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -159,6 +163,7 @@
 		377704ED2B4BAE7F00AF6D3D = {
 			isa = PBXGroup;
 			children = (
+				37BF5A5D2B60F4F50046D4D4 /* Module */,
 				37C33BC72B6026CD00F2EBEF /* .swiftlint.yml */,
 				37C33BC32B60242A00F2EBEF /* codemagic.yaml */,
 				377704F82B4BAE7F00AF6D3D /* RawgExpert */,
@@ -240,6 +245,17 @@
 				377705522B50456600AF6D3D /* HomeRouter.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		37BF5A5D2B60F4F50046D4D4 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				37BF5A602B60F5270046D4D4 /* Core */,
+				37BF5A5F2B60F5270046D4D4 /* Detail */,
+				37BF5A622B60F5270046D4D4 /* Favorite */,
+				37BF5A612B60F5270046D4D4 /* Games */,
+			);
+			path = Module;
 			sourceTree = "<group>";
 		};
 		37D3A4952B5D00F7002A1DD7 /* Frameworks */ = {
