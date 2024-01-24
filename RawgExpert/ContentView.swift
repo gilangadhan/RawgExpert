@@ -5,13 +5,12 @@ import Favorite
 
 struct ContentView: View {
 
-  // swiftlint: disable line_length
   @EnvironmentObject var homePresenter: GetListPresenter<Any, GameDomainModel, Interactor<Any, [GameDomainModel], GetGamesRepository<GetGamesLocaleDataSource, GetGamesRemoteDataSource, GameTransformer>>>
 
   @EnvironmentObject var searchPresenter: SearchPresenter<GameDomainModel, Interactor<String, [GameDomainModel], SearchRepository<GetSearchLocaleDataSource, GetSearchRemoteDataSource, SearchTransformer>>>
 
   @EnvironmentObject var favoritePresenter: FavoritePresenter<Int, GameDomainModel, Interactor<Int, [GameDomainModel], GetFavoriteRepository<GetFavoriteLocaleDataSource, FavoriteListTransformer>>>
-  
+
   var body: some View {
     TabView {
       NavigationStack {

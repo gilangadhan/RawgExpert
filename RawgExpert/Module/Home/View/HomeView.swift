@@ -3,8 +3,8 @@ import Core
 import Games
 
 struct HomeView: View {
-  // swiftlint: disable line_length
-  @ObservedObject var listPresenter: GetListPresenter<Any, GameDomainModel, Interactor<Any, [GameDomainModel],  GetGamesRepository<GetGamesLocaleDataSource, GetGamesRemoteDataSource, GameTransformer>>>
+
+  @ObservedObject var listPresenter: GetListPresenter<Any, GameDomainModel, Interactor<Any, [GameDomainModel], GetGamesRepository<GetGamesLocaleDataSource, GetGamesRemoteDataSource, GameTransformer>>>
 
   @ObservedObject var searchPresenter: SearchPresenter<GameDomainModel, Interactor<String, [GameDomainModel], SearchRepository<GetSearchLocaleDataSource, GetSearchRemoteDataSource, SearchTransformer>>>
 

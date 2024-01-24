@@ -70,6 +70,6 @@ extension FavoriteView {
     @ViewBuilder content: () -> Content
   ) -> some View {
     NavigationLink(destination: FavoriteRouter().makeDetailFavoriteView(for: favorite)
-    ){ content() }
+    ) { content() }
   }
 }

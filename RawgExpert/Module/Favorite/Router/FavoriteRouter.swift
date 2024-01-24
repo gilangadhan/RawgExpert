@@ -11,7 +11,7 @@ class FavoriteRouter {
       Int, GameDomainModel, GetDetailRepository<
         GetDetailLocaleDataSource, GetDetailRemoteDataSource, DetailTransformer>
     > = DependencyInjection.init().provideDetail(detail: fav)
-  
+
     let favoriteUseCase: Interactor<
       Int, GameDomainModel, UpdateFavoriteRepository<
         GetFavoriteLocaleDataSource, FavoriteTransformer>
