@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -32,6 +32,9 @@
 		377705222B4ECA3B00AF6D3D /* DependencyInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377705212B4ECA3B00AF6D3D /* DependencyInjection.swift */; };
 		377705502B50307B00AF6D3D /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3777054F2B50307B00AF6D3D /* DetailView.swift */; };
 		377705532B50456600AF6D3D /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377705522B50456600AF6D3D /* HomeRouter.swift */; };
+		37BF5A492B60EA3C0046D4D4 /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = 37BF5A482B60EA3C0046D4D4 /* Core */; };
+		37BF5A4C2B60EA700046D4D4 /* Detail in Frameworks */ = {isa = PBXBuildFile; productRef = 37BF5A4B2B60EA700046D4D4 /* Detail */; };
+		37BF5A4F2B60EA910046D4D4 /* Favorite in Frameworks */ = {isa = PBXBuildFile; productRef = 37BF5A4E2B60EA910046D4D4 /* Favorite */; };
 		37C33BC42B60242A00F2EBEF /* codemagic.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 37C33BC32B60242A00F2EBEF /* codemagic.yaml */; };
 		37C33BC82B6026CD00F2EBEF /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 37C33BC72B6026CD00F2EBEF /* .swiftlint.yml */; };
 /* End PBXBuildFile section */
@@ -83,8 +86,11 @@
 				3777050B2B4BB03F00AF6D3D /* Alamofire in Frameworks */,
 				3765647A2B512C2D00236EDD /* RealmSwift in Frameworks */,
 				376564702B512A3500236EDD /* RealmCapi in Frameworks */,
+				37BF5A4F2B60EA910046D4D4 /* Favorite in Frameworks */,
 				376564742B512A3500236EDD /* RealmFFI in Frameworks */,
+				37BF5A492B60EA3C0046D4D4 /* Core in Frameworks */,
 				376564722B512A3500236EDD /* RealmCore in Frameworks */,
+				37BF5A4C2B60EA700046D4D4 /* Detail in Frameworks */,
 				376564762B512A3500236EDD /* RealmQueryParser in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,6 +321,9 @@
 				376564752B512A3500236EDD /* RealmQueryParser */,
 				376564772B512C2D00236EDD /* Realm */,
 				376564792B512C2D00236EDD /* RealmSwift */,
+				37BF5A482B60EA3C0046D4D4 /* Core */,
+				37BF5A4B2B60EA700046D4D4 /* Detail */,
+				37BF5A4E2B60EA910046D4D4 /* Favorite */,
 			);
 			productName = RawgExpert;
 			productReference = 377704F62B4BAE7F00AF6D3D /* RawgExpert.app */;
@@ -370,6 +379,9 @@
 				377705092B4BB03F00AF6D3D /* XCRemoteSwiftPackageReference "Alamofire" */,
 				3765646B2B51277300236EDD /* XCRemoteSwiftPackageReference "realm-swift" */,
 				3765646E2B512A3500236EDD /* XCRemoteSwiftPackageReference "realm-core" */,
+				37BF5A472B60EA3C0046D4D4 /* XCLocalSwiftPackageReference "../Module/Core" */,
+				37BF5A4A2B60EA700046D4D4 /* XCLocalSwiftPackageReference "../Module/Detail" */,
+				37BF5A4D2B60EA910046D4D4 /* XCLocalSwiftPackageReference "../Module/Favorite" */,
 			);
 			productRefGroup = 377704F72B4BAE7F00AF6D3D /* Products */;
 			projectDirPath = "";
@@ -712,6 +724,21 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCLocalSwiftPackageReference section */
+		37BF5A472B60EA3C0046D4D4 /* XCLocalSwiftPackageReference "../Module/Core" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../Module/Core;
+		};
+		37BF5A4A2B60EA700046D4D4 /* XCLocalSwiftPackageReference "../Module/Detail" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../Module/Detail;
+		};
+		37BF5A4D2B60EA910046D4D4 /* XCLocalSwiftPackageReference "../Module/Favorite" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../Module/Favorite;
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCRemoteSwiftPackageReference section */
 		3765646B2B51277300236EDD /* XCRemoteSwiftPackageReference "realm-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
@@ -774,6 +801,18 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 377705092B4BB03F00AF6D3D /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		37BF5A482B60EA3C0046D4D4 /* Core */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Core;
+		};
+		37BF5A4B2B60EA700046D4D4 /* Detail */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Detail;
+		};
+		37BF5A4E2B60EA910046D4D4 /* Favorite */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Favorite;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
